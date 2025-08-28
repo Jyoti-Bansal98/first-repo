@@ -3,243 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Best Online Food Delivery Service in India | MyonlineMeal.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="navbar">
-            <div class="nav-logo border">
-                <div class="logo"></div>
+    <nav id="navbar">
+       <div id="logo">
+        <img src="nav_logo.png" alt="MyonlineMeal" class="nav-logo">
+       </div>
+
+       <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#client-section">Our Clients</a></li>
+        <li class="item"><a href="#contact">Contact Us</a></li>
+       </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyonlineMeal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquid sdfgj fsdgb eeg </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">
+           Our Services 
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="img_2.jpg" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class=" center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quae, blanditiis ipsam vitae similique autem aliquid quos eum beatae! Ut quibusdam nihil impedit, velit explicabo ullam nemo officia nobis! Nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore in velit nulla, eveniet fugit! Numquam necessitatibus totam suscipit temporibus.</p>
             </div>
 
-            <div class="nav-address border">
-                <p class="add-1">Deliver to</p>
-                <div class="add-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="add-2">India</p>
+            <div class="box">
+                <img src="img_3.jpg" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class=" center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quae, blanditiis ipsam vitae similique autem aliquid quos eum beatae! Ut quibusdam nihil impedit, velit explicabo ullam nemo officia nobis! Nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatibus magnam atque nostrum esse id nihil placeat architecto. Id, ipsum.</p>
+            </div>
+
+            <div class="box">
+                <img src="img_1.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class=" center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quae, blanditiis ipsam vitae similique autem aliquid quos eum beatae! Ut quibusdam nihil impedit, velit explicabo ullam nemo officia nobis! Nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit doloremque exercitationem accusamus excepturi earum itaque temporibus officiis tempora omnis ab?</p>
+            </div>
+        </div>
+    
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="apple_logo.png" alt="our clint">
+            </div>
+            <div class="client-item">
+                <img src="hp_logo.png" alt="our clint">
+            </div>
+            <div class="client-item">
+                <img src="Microsoft-Logo.wine.png" alt="our clint">
+            </div>
+            <div class="client-item">
+                <img src="Skype_logo.png" alt="our clint">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
                 </div>
-            </div>
-
-            <div class="nav-search">
-                <select class="search-select">
-                    <option>All</option>
-                    <option>Clothes</option>
-                    <option>Mobile</option>
-                    <option>Makeup</option>
-                    <option>Shoes</option>
-                    <option>Tops</option>
-                </select>
-                <input placeholder="Search Amazon" class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="form-group">
+                    <label for="name">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
                 </div>
-            </div>
-
-            <div class="nav-signin border">
-                <p><span>Hello, sign in</span></p>
-                <p class="nav-second">Account & Lists</p>
-            </div>
-
-            <div class="nav-return border">
-                <p><span>Returns</span></p>
-                <p class="nav-second">& Orders</p>
-            </div>
-
-            <div class="nav-cart border">
-                <i class="fa-solid fa-cart-shopping"></i>
-                Cart
-            </div>
-        </div>
-
-        <div class="panel">
-            <div class="panel-all panel-border">
-                <i class="fa-solid fa-bars"></i>
-                All
-            </div>
-            <div class="panel-ops">
-                <p class="panel-border">Today's Deals</p>
-                <p class="panel-border">Customer Service</p>
-                <p class="panel-border">Register</p>
-                <p class="panel-border">Gift Cards</p>
-                <p class="panel-border">Sell</p>
-            </div>
-            <div class="panel-deals panel-border">
-                Shop deals in Electronics
-            </div>
-        </div>
-    </header>
-
-    <div class="hero-section">
-        <div class="hero-msg">
-            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="https://www.amazon.in">Click here to go to amazon.in</a></p>
-        </div>
-    </div>
-
-    <div class="shop-section">
-        <div class="box1 box">
-           <div class="box-content">
-            <h2>Clothes</h2>
-            <a href="https://www.amazon.in/s?k=shopping+clothes+amazon+shopping+online&adgrpid=1320515123105719&hvadid=82532463179258&hvbmt=be&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=e&hvtargid=kwd-82533131444031%3Aloc-90&hydadcr=15737_2370463&msclkid=4f238e0eef2a1907cb5ae9bb608130c4&tag=msndeskstdin-21&ref=pd_sl_5kixmbo52q_e" class="see-more"><div class="box-img" style="background-image: url('box1_image.jpg');"></div>
-            <p>See more</p></a>
-           </div>
-        </div>
-
-        <div class="box2 box">
-            <div class="box-content">
-                <h2>Health & Personal Care</h2>
-                <a href="https://www.amazon.in/s?k=amazon+skin+care&adgrpid=1316117025931939&hvadid=82257581320677&hvbmt=bp&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=p&hvtargid=kwd-82258191692754%3Aloc-90&hydadcr=5845_2377525&msclkid=71bfbd599b1e17befbf9daec0b76e415&tag=msndeskstdin-21&ref=pd_sl_5mmwrafo94_p" class="see-more"><div class="box-img" style="background-image: url('box2_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box3 box">
-            <div class="box-content">
-                <h2>Furniture</h2>
-                <a href="https://www.amazon.in/Furniture/b?node=1380441031" class="see-more"><div class="box-img" style="background-image: url('box3_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box4 box">
-            <div class="box-content">
-                <h2>Electronics</h2>
-                <a href="https://www.amazon.in/s?k=electronics+amazon&adgrpid=1313918000942689&hvadid=82120146707151&hvbmt=be&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=e&hvtargid=kwd-82120751655325%3Aloc-90&hydadcr=24565_2369340&msclkid=9bbaaacbff3c1f4e3b1bcd7e6e1cdf0e&tag=msndeskstdin-21&ref=pd_sl_32dchlwm7z_e" class="see-more"><div class="box-img" style="background-image: url('box4_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box5 box">
-            <div class="box-content">
-            <h2>Beauty Picks</h2>
-            <a href="https://www.amazon.in/s?k=amazon+makeup&adgrpid=1313918002603265&hvadid=82120142309338&hvbmt=be&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=e&hvtargid=kwd-82120754031247%3Aloc-90&hydadcr=5842_2377481&msclkid=8ff1655f13c617960d3c02ea824cbb6a&tag=msndeskstdin-21&ref=pd_sl_6qwc43jywy_e" class="see-more"><div class="box-img" style="background-image: url('box5_image.jpg');"></div>
-             <p>See more</p></a>
-            </div>
-         </div>
-
-         <div class="box6 box">
-             <div class="box-content">
-                 <h2>Pet Care</h2>
-                 <a href="https://www.amazon.in/s?k=amazon+pet+products&adgrpid=1320515751981175&hvadid=82532462432876&hvbmt=be&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=e&hvtargid=kwd-82533162042904%3Aloc-90&hydadcr=190_2681045&msclkid=eebd554680c6196b709732f311297db3&tag=msndeskstdin-21&ref=pd_sl_253o6tbjjm_e" class="see-more"><div class="box-img" style="background-image: url('box6_image.jpg');"></div>
-                 <p>See more</p></a>
+                <div class="form-group">
+                    <label for="name">Phone Number: </label>
+                    <input type="number" name="number" id="number" placeholder="Enter your number">
                 </div>
-         </div>
-
-         <div class="box7 box">
-            <div class="box-content">
-                <h2>New Arrival in Toys</h2>
-                <a href="https://www.amazon.in/s?k=toys+for+kids+on+amazon&adgrpid=1317216536124980&hvadid=82326304014309&hvbmt=be&hvdev=c&hvlocphy=155218&hvnetw=o&hvqmt=e&hvtargid=kwd-82326911806891%3Aloc-90&hydadcr=24539_2369371&msclkid=e2b32cb7f76c180859ee4b026525121c&tag=msndeskstdin-21&ref=pd_sl_9ae7krag6b_e" class="see-more"><div class="box-img" style="background-image: url('box7_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
         </div>
-
-        <div class="box8 box">
-            <div class="box-content">
-                <h2>Discover Fashion Trends</h2>
-                <a href="https://www.amazon.in/b?node=21901847031" class="see-more"><div class="box-img" style="background-image: url('box8_image.jpg');"></div>
-                <p>See more</p></a>
-            </div>
-        </div>
-
-        <!-- <div class="box13 box-13">
-            <div class="box-content">
-                <h2>Top Picks for India</h2>
-                <div style="background-image: url('box13_image1.jpg');"></div>
-            </div>
-        </div> -->
-
-        <div class="box9 box">
-            <div class="box-content">
-                <h2>New Year New Supplies</h2>
-                <a href="https://www.amazon.com/s?k=school+supplies&_encoding=UTF8&content-id=amzn1.sym.3751854a-d965-4dc2-81d5-71485d47fe5d&pd_rd_r=2cc4a12d-1f8c-4983-ae6a-f6e7c144edc8&pd_rd_w=vuXIR&pd_rd_wg=QY5a6&pf_rd_p=3751854a-d965-4dc2-81d5-71485d47fe5d&pf_rd_r=CPY70R151GRM7FGK02GH&ref=pd_hp_d_atf_unk" class="see-more"><div class="box-img" style="background-image: url('box9_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box10 box">
-            <div class="box-content">
-                <h2>Get Your Game On</h2>
-                <a href="https://www.amazon.com/s?k=gaming&_encoding=UTF8&content-id=amzn1.sym.860dbf94-9f09-4ada-8615-32eb5ada253a&pd_rd_r=2cc4a12d-1f8c-4983-ae6a-f6e7c144edc8&pd_rd_w=E7wlc&pd_rd_wg=QY5a6&pf_rd_p=860dbf94-9f09-4ada-8615-32eb5ada253a&pf_rd_r=CPY70R151GRM7FGK02GH&ref=pd_hp_d_atf_unk" class="see-more"><div class="box-img" style="background-image: url('box10_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box11 box">
-            <div class="box-content">
-                <h2>Handbags</h2>
-                <a href="https://www.amazon.com/s?k=vacation+handbags&_encoding=UTF8&content-id=amzn1.sym.e0870a2a-3b8f-43b4-b7d1-1cd06307771f&pd_rd_r=02817248-2be6-4fa5-a45a-f0963f3b0a0c&pd_rd_w=sM5yu&pd_rd_wg=ZMFuu&pf_rd_p=e0870a2a-3b8f-43b4-b7d1-1cd06307771f&pf_rd_r=CPY70R151GRM7FGK02GH&ref=pd_hp_d_btf_unk" class="see-more"><div class="box-img" style="background-image: url('box11_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-
-        <div class="box12 box">
-            <div class="box-content">
-                <h2>Home Decor</h2>
-                <a href="https://www.amazon.com/s?k=home+decor&_encoding=UTF8&content-id=amzn1.sym.83009b1f-702c-4be7-814b-0240b8f687d2&pd_rd_r=2cc4a12d-1f8c-4983-ae6a-f6e7c144edc8&pd_rd_w=0Iqxh&pd_rd_wg=QY5a6&pf_rd_p=83009b1f-702c-4be7-814b-0240b8f687d2&pf_rd_r=CPY70R151GRM7FGK02GH&ref=pd_hp_d_atf_unk" class="see-more"><div class="box-img" style="background-image: url('box12_image.jpg');"></div>
-                <p>See more</p></a>
-               </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
-
-        <div class="foot-panel2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a>Careers</a>
-                <a>Blog</a>
-                <a>About Amazon</a>
-                <a>Investor Relations</a>
-                <a>Amazon Device</a>
-                <a>Amazon Science</a>
-            </ul>
-            <ul>
-                <p>Make Money with Us</p>
-                <a>Sell products on Amazon</a>
-                <a>Sell apps on aAmazon</a>
-                <a>Become an affiliate</a>
-                <a>Advertise Your Product</a>
-                <a>Self-Publish with Us</a>
-                <a>Host an Amazon Hub</a>
-                <a>Sell on Amazon Business</a>
-                <a>See More</a>
-            </ul>
-            <ul>
-                <p>Amazon Payment Products</p>
-                <a>Amazon Business Card</a>
-                <a>Shop with Points</a>
-                <a>Reload Your Balance</a>
-                <a>Amazon Currency Converter</a>
-            </ul>
-            <ul>
-                <p>Let Us Help You</p>
-                <a>your Account</a>
-                <a>Your Orders</a>
-                <a>Shipping Rates & Policies</a>
-                <a>Returns & Replacements</a>
-                <a>Manage Your Content and Devices</a>
-                <a>Help</a>
-            </ul>
-        </div>
-
-        <div class="foot-panel3">
-            <div class="logo"></div>
-        </div>
-
-        <div class="foot-panel4">
-            <div class="pages">
-                <a>Conditions of Use</a>
-                <a>Privacy Notice</a>
-                <a>Your Ads</a>
-                <a>Privacy Choices</a>
-            </div>
-            <div class="copyright">
-                © 1996-2025, Amazon.com, Inc. or its affiliates
-            </div>
+        <div class="center">
+            &copy; www.myonlineMeals.com. All rights reserved!
         </div>
     </footer>
 </body>
