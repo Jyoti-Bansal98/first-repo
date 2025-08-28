@@ -1,2 +1,2 @@
 # first-repo
-My Python learning journey
+My First Project
